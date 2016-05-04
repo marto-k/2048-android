@@ -1,5 +1,5 @@
 
-package com.uberspot.a2048;
+package com.martin.a2048;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -23,6 +23,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebSettings.RenderPriority;
 import android.webkit.WebView;
 import android.widget.Toast;
+
+import com.martin.m2048.R;
 
 import de.cketti.library.changelog.ChangeLog;
 
@@ -94,7 +96,7 @@ public class MainActivity extends Activity {
         if (savedInstanceState != null) {
             mWebView.restoreState(savedInstanceState);
         } else {
-            mWebView.loadUrl("file:///android_asset/2048/index.html");
+            mWebView.loadUrl("https://gabrielecirulli.github.io/2048/");
         }
 
         Toast.makeText(getApplication(), R.string.toggle_fullscreen, Toast.LENGTH_SHORT).show();
